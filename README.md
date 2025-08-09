@@ -4,7 +4,7 @@ TypeScript SDK for interacting with Effective Acceleration, a decentralized peer
 
 ## Features
 
-- **Multi-wallet support** - MetaMask, WalletConnect, and private key connections
+- **Multi-wallet support** - Comptatible with ethers providers, JSON RPC, and private key connections
 - **Complete job lifecycle** - Create, update, take, deliver, and complete jobs
 - **User management** - Register users and arbitrators with profiles
 - **Messaging system** - Encrypted communication between parties
@@ -28,11 +28,8 @@ import { ethers } from 'ethers';
 const client = new EACCClient({
   marketplaceV2Address: '0x...',
   marketplaceDataV1Address: '0x...',
-  chainId: 1, // Ethereum mainnet
+  chainId: 42161, // Arbitrum One
 });
-
-// Connect wallet
-await client.connectMetaMask();
 
 // Register as a user
 await client.registerUser({
@@ -94,9 +91,6 @@ const client = new EACCClient({
 ### Wallet Connection
 
 ```typescript
-// MetaMask
-await client.connectMetaMask();
-
 // Private key
 await client.connectWithPrivateKey(privateKey, rpcUrl);
 
@@ -195,11 +189,11 @@ npm test
 
 ## Network Addresses
 
-### Mainnet
+### Arbitrum One Mainnet
 - MarketplaceV2: 0x405AcFbD1400A168fDd4aDA2D214e8Ae5FF7a624
 - MarketplaceDataV1: 0x0191ae69d05F11C7978cCCa2DE15653BaB509d9a
 
-### Testnet (Goerli)
+### Arbitrum Sepolia Testnet
 - MarketplaceV2: TBD
 - MarketplaceDataV1: TBD
 
@@ -229,7 +223,7 @@ try {
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Links
 
