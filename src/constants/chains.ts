@@ -1,0 +1,1 @@
+export const ARBITRUM_ONE_MAINNET: number = 42161;

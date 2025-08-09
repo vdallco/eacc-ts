@@ -1,0 +1,51 @@
+{
+  "name": "eacc-sdk",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for Effective Acceleration decentralized marketplace",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "test": "ts-node tests/client.test.ts",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "example:basic": "ts-node examples/basic-usage.ts",
+    "example:publish": "ts-node examples/publish-job.ts",
+    "example:take": "ts-node examples/take-job.ts",
+    "example:register": "ts-node examples/register-user.ts"
+  },
+  "keywords": [
+    "ethereum",
+    "marketplace",
+    "decentralized",
+    "jobs",
+    "web3",
+    "blockchain"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "ethers": "^6.15.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^20.0.0",
+    "nodemon": "^3.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/eacc-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/eacc-sdk/issues"
+  },
+  "homepage": "https://github.com/yourusername/eacc-sdk#readme"
+}
