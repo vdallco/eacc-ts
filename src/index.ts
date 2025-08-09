@@ -12,3 +12,5 @@ export * from './types';
 export * from './constants/addresses';
 
 export const SDK_VERSION = '1.0.0';
+
+export { ARBITRUM_ONE_MAINNET } from './constants/chains';
