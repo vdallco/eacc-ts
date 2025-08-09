@@ -4,7 +4,7 @@ TypeScript SDK for interacting with Effective Acceleration, a decentralized peer
 
 ## Features
 
-- **Multi-wallet support** - Comptatible with ethers providers, JSON RPC, and private key connections
+- **Multi-wallet support** - Compatible with ethers providers, JSON RPC, and private key connections
 - **Complete job lifecycle** - Create, update, take, deliver, and complete jobs
 - **User management** - Register users and arbitrators with profiles
 - **Messaging system** - Encrypted communication between parties
