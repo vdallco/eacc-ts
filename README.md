@@ -15,13 +15,13 @@ TypeScript SDK for interacting with Effective Acceleration, a decentralized peer
 ## Installation
 
 ```bash
-npm install eacc-sdk ethers
+npm install eacc-ts ethers
 ```
 
 ## Quick Start
 
 ```typescript
-import { EACCClient } from 'eacc-sdk';
+import { EACCClient } from 'eacc-ts';
 import { ethers } from 'ethers';
 
 // Initialize the client
